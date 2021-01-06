@@ -29,7 +29,7 @@ def get_japanese_emoticon(file_name, emoji)
   emoticons = {}
   
   emoji.each do |emotion, symbol|
-    emoticons[emotion]["sad"][1]    
+    emoticons["sad"][1][symbol]    
   
   end
   
