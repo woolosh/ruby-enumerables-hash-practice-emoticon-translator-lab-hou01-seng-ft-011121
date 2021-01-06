@@ -41,5 +41,5 @@ end
 def get_english_meaning(file_name, emoji)
   
   emojis = load_library(file_name)
-  binding.pry
+  # binding.pry
 end
