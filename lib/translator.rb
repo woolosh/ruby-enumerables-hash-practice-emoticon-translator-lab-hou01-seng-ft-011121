@@ -26,14 +26,14 @@ def get_japanese_emoticon(file_name, emoji)
   emojis = load_library(file_name)
   # binding.pry
   
-  emoticon = {}
+  emoticons = {}
   
   emoji.each do |emotion, symbol|
-    emoticon[emotion]["sad"][1]    
+    emoticons[emotion]["sad"][1]    
   
   end
   
-  return emoticon
+  return emoticons
   
 end
   
