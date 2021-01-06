@@ -43,13 +43,13 @@ def get_english_meaning(file_name, emoji)
   emojis = load_library(file_name)
   # binding.pry
   
-    emoticon = {}
+  #   emoticon = {}
   
-  emoji.each do |emotion, symbol|
-    emoticon[emotion]["happy"][0]    
+  # emoji.each do |emotion, symbol|
+  #   emoticon[emotion]["happy"][0]    
   
-  end
+  # end
   
-  return emoticon
+  # return emoticon
   
 end
