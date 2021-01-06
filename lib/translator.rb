@@ -37,6 +37,8 @@ def get_english_meaning(file_name, emoji)
     symbol.each do |lang, value|
       if value == emoji
         return emotion
+      else 
+        return "Sorry, that emoticon was not found"
       end
     end
   end  
