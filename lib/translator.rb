@@ -21,7 +21,7 @@ end
 def get_japanese_emoticon(file_name, emoji)
   
   emojis = load_library(file_name)
-  binding.pry
+  # binding.pry
   
 end
 
