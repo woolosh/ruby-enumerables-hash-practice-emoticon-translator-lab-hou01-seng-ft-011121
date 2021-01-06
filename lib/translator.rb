@@ -16,16 +16,16 @@ emojis = YAML.load_file(file_name)
 end
   
 
-  # code goes here
 def get_japanese_emoticon(file_name, emoji)
   
   load_library(file_name)
   
   
-  
 end
 
 
-  # code goes here
 def get_english_meaning(file_name, emoji)
+  
+    load_library(file_name)
+    
 end
