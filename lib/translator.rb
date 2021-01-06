@@ -36,7 +36,7 @@ def get_english_meaning(file_name, emoji)
   emojis.each do |emotion, symbol|
     symbol.each do |lang, value|
       if value == emoji
-        return symbol
+        return emotion
       end
     end
   end  
