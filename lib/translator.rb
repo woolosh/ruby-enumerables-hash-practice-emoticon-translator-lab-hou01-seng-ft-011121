@@ -26,16 +26,16 @@ def get_japanese_emoticon(file_name, emoji)
   emojis = load_library(file_name)
   # binding.pry
   
-  emoticon = {}
+  # emoticon = {}
   
-  emoji.each do |emotion, symbol|
-    emoticon[emotion]["sad"][1][symbol]    
+  # emoji.each do |emotion, symbol|
+  #   emoticon[emotion]["sad"][1][symbol]    
   
-    p emotion["sad"][0][symbol]
+  #   p emotion["sad"][0][symbol]
     
-  end
+  # end
   
-  return emoticon
+  # return emoticon
   
 end
   
@@ -45,13 +45,11 @@ def get_english_meaning(file_name, emoji)
   emojis = load_library(file_name)
   # binding.pry
   
-  #   emoticon = {}
-  
-  # emoji.each do |emotion, symbol|
-  #   emoticon[emotion]["happy"][0]    
-  
-  # end
-  
-  # return emoticon
-  
+  emojis.each do |emotion, symbol|
+    symbol.each do |lang, value|
+      if value == emoji
+        return symbol
+        
+      end
+   end
 end
