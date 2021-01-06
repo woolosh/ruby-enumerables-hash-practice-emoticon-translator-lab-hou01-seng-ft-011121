@@ -25,6 +25,15 @@ def get_japanese_emoticon(file_name, emoji)
   
   emojis = load_library(file_name)
   # binding.pry
+  
+    emojis.each do |emotion, symbol|
+    symbol.each do |lang, value|
+      if value == emoji
+        return lang[1][value]
+      end
+    end
+  end  
+  "Sorry, that emoticon was not found"
 end
   
 
