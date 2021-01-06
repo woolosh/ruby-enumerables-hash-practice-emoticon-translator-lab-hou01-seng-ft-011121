@@ -29,7 +29,7 @@ def get_japanese_emoticon(file_name, emoji)
     emojis.each do |emotion, symbol|
     symbol.each do |lang, value|
       if value == emoji
-        return lang[value][1]
+        return symbol[1]
       end
     end
   end  
