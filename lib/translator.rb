@@ -13,8 +13,11 @@ emojis = YAML.load_file(file_name)
       :english => symbol[0],
       :japanese => symbol[1]
       }
+      
     end
+    
   return emoticons
+  
 end
   
 
@@ -23,8 +26,17 @@ def get_japanese_emoticon(file_name, emoji)
   emojis = load_library(file_name)
   # binding.pry
   
+  emoticon = {}
+  
+  emoji.each do |emotion, symbol|
+    emoticon[emotion]["sad"][1]    
+  
+  end
+  
+  return emoticon
+  
 end
-
+  
 
 def get_english_meaning(file_name, emoji)
   
