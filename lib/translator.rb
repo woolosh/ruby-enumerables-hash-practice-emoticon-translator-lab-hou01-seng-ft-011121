@@ -3,7 +3,17 @@ require "yaml"
 emojis = YAML.load_file
 
 def load_library
-  # code goes here
+ 
+  emoticons = {}
+
+  emojis.each do |emotion, symbol|
+    emoticons[emotion] = {
+      :english => symbol[0],
+      :japanese => symbol[1]
+      }
+    end
+  return emoticons
+end
   
   
 end
