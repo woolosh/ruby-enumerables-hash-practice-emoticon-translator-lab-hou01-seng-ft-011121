@@ -2,7 +2,8 @@
 require "yaml"
 emojis = YAML.load_file
 
-def load_library
+def load_library(file_name)
+  
  
   emoticons = {}
 
