@@ -1,3 +1,5 @@
+require 'pry'
+
 # require modules here
 require "yaml"
 
@@ -19,7 +21,7 @@ end
 def get_japanese_emoticon(file_name, emoji)
   
   load_library(file_name)
-  
+  binding.pry
   
 end
 
