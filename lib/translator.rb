@@ -20,7 +20,7 @@ end
 
 def get_japanese_emoticon(file_name, emoji)
   
-  load_library(file_name)
+  emojis = load_library(file_name)
   binding.pry
   
 end
@@ -28,6 +28,6 @@ end
 
 def get_english_meaning(file_name, emoji)
   
-    load_library(file_name)
-    
+  emojis = load_library(file_name)
+  binding.pry
 end
